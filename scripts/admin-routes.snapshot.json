@@ -1,0 +1,806 @@
+[
+  {
+    "method": "GET",
+    "path": "/"
+  },
+  {
+    "method": "GET",
+    "path": "/analytics"
+  },
+  {
+    "method": "GET",
+    "path": "/api-keys"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/:id/versions"
+  },
+  {
+    "method": "GET",
+    "path": "/forms"
+  },
+  {
+    "method": "GET",
+    "path": "/forms/:slug/export.csv"
+  },
+  {
+    "method": "GET",
+    "path": "/rbac"
+  },
+  {
+    "method": "GET",
+    "path": "/ai-prompts"
+  },
+  {
+    "method": "GET",
+    "path": "/ai-qa"
+  },
+  {
+    "method": "GET",
+    "path": "/ai-settings"
+  },
+  {
+    "method": "GET",
+    "path": "/articles"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/:id/preview"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/:id/social"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/:id/social/:platform"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/:id/wechat"
+  },
+  {
+    "method": "GET",
+    "path": "/articles/new"
+  },
+  {
+    "method": "GET",
+    "path": "/cases"
+  },
+  {
+    "method": "GET",
+    "path": "/cases/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/cases/new"
+  },
+  {
+    "method": "GET",
+    "path": "/cities"
+  },
+  {
+    "method": "GET",
+    "path": "/cities/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/collection-logs"
+  },
+  {
+    "method": "GET",
+    "path": "/geo"
+  },
+  {
+    "method": "GET",
+    "path": "/geo/structured-data"
+  },
+  {
+    "method": "GET",
+    "path": "/keywords"
+  },
+  {
+    "method": "GET",
+    "path": "/keywords/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/login"
+  },
+  {
+    "method": "GET",
+    "path": "/media"
+  },
+  {
+    "method": "GET",
+    "path": "/messages"
+  },
+  {
+    "method": "GET",
+    "path": "/modules"
+  },
+  {
+    "method": "GET",
+    "path": "/modules/contact"
+  },
+  {
+    "method": "GET",
+    "path": "/modules/languages"
+  },
+  {
+    "method": "GET",
+    "path": "/modules/navigation"
+  },
+  {
+    "method": "GET",
+    "path": "/news-sources"
+  },
+  {
+    "method": "GET",
+    "path": "/news-sources/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/page-nav-labels"
+  },
+  {
+    "method": "GET",
+    "path": "/pages"
+  },
+  {
+    "method": "GET",
+    "path": "/pages/:key/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/rankings"
+  },
+  {
+    "method": "GET",
+    "path": "/rankings/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/recover"
+  },
+  {
+    "method": "GET",
+    "path": "/seo"
+  },
+  {
+    "method": "GET",
+    "path": "/services"
+  },
+  {
+    "method": "GET",
+    "path": "/services/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/services/new"
+  },
+  {
+    "method": "GET",
+    "path": "/settings"
+  },
+  {
+    "method": "GET",
+    "path": "/settings/presets"
+  },
+  {
+    "method": "GET",
+    "path": "/settings/presets/:id"
+  },
+  {
+    "method": "GET",
+    "path": "/setup"
+  },
+  {
+    "method": "GET",
+    "path": "/social"
+  },
+  {
+    "method": "GET",
+    "path": "/social/settings"
+  },
+  {
+    "method": "GET",
+    "path": "/subprojects"
+  },
+  {
+    "method": "GET",
+    "path": "/subprojects/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/subprojects/new"
+  },
+  {
+    "method": "GET",
+    "path": "/system"
+  },
+  {
+    "method": "GET",
+    "path": "/system-secrets"
+  },
+  {
+    "method": "GET",
+    "path": "/tenants"
+  },
+  {
+    "method": "GET",
+    "path": "/tenants/:id/edit"
+  },
+  {
+    "method": "GET",
+    "path": "/tenants/new"
+  },
+  {
+    "method": "POST",
+    "path": "/account"
+  },
+  {
+    "method": "POST",
+    "path": "/api-keys/:id/revoke"
+  },
+  {
+    "method": "POST",
+    "path": "/api-keys/create"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/versions/:version/restore"
+  },
+  {
+    "method": "POST",
+    "path": "/forms/save"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/admins"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/admins/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/admins/:id/role"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/roles"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/roles/:id/assign"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/roles/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/roles/:id/permissions"
+  },
+  {
+    "method": "POST",
+    "path": "/rbac/roles/:id/revoke"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-prompts/generate-for-industry"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-prompts/reset"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-prompts/save"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-prompts/test"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-qa/clear-log"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-qa/save"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-qa/test"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-qa/wecom-test"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-settings"
+  },
+  {
+    "method": "POST",
+    "path": "/ai-settings/test"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/ai-optimize"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/approve"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/content/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/publish"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/reject"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/social/:platform"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/social/:platform/generate"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/social/:platform/mark-copied"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/wechat"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/:id/wechat/mark-copied"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/ai-preview"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/ai-publish"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/image-upload-page"
+  },
+  {
+    "method": "POST",
+    "path": "/articles/new"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/:id/ai-content"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/:id/auto-seo"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/ai-content"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/new"
+  },
+  {
+    "method": "POST",
+    "path": "/cases/page-settings"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/:id/ai-content"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/:id/auto-seo"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/:id/content/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/add"
+  },
+  {
+    "method": "POST",
+    "path": "/cities/bulk-delete"
+  },
+  {
+    "method": "POST",
+    "path": "/collection-logs/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/collection-logs/delete-all"
+  },
+  {
+    "method": "POST",
+    "path": "/geo"
+  },
+  {
+    "method": "POST",
+    "path": "/geo/citations"
+  },
+  {
+    "method": "POST",
+    "path": "/geo/citations/probe"
+  },
+  {
+    "method": "POST",
+    "path": "/geo/entity"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/:id/ai-content"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/:id/content/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/ai-generate"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/cleanup"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/generate"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/rescore"
+  },
+  {
+    "method": "POST",
+    "path": "/keywords/settings"
+  },
+  {
+    "method": "POST",
+    "path": "/login"
+  },
+  {
+    "method": "POST",
+    "path": "/media/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/media/contact-qr"
+  },
+  {
+    "method": "POST",
+    "path": "/media/contact-qr/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/media/delete-one"
+  },
+  {
+    "method": "POST",
+    "path": "/media/delete-selected"
+  },
+  {
+    "method": "POST",
+    "path": "/media/upload"
+  },
+  {
+    "method": "POST",
+    "path": "/messages/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/messages/:id/read"
+  },
+  {
+    "method": "POST",
+    "path": "/messages/:id/reply"
+  },
+  {
+    "method": "POST",
+    "path": "/modules/contact"
+  },
+  {
+    "method": "POST",
+    "path": "/modules/contact/form"
+  },
+  {
+    "method": "POST",
+    "path": "/modules/languages"
+  },
+  {
+    "method": "POST",
+    "path": "/modules/languages/form"
+  },
+  {
+    "method": "POST",
+    "path": "/modules/navigation"
+  },
+  {
+    "method": "POST",
+    "path": "/modules/navigation/form"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/:id/analyze"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/:id/analyze-publish"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/:id/collect"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/articles/:id/recreate"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/auto-publish"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/collect"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/new"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/quality"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/round-items"
+  },
+  {
+    "method": "POST",
+    "path": "/news-sources/schedule"
+  },
+  {
+    "method": "POST",
+    "path": "/page-images/city/:slug"
+  },
+  {
+    "method": "POST",
+    "path": "/page-images/city/:slug/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/page-images/home"
+  },
+  {
+    "method": "POST",
+    "path": "/page-images/home/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/page-images/service/:slug"
+  },
+  {
+    "method": "POST",
+    "path": "/page-images/service/:slug/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/pages/:key/ai-content"
+  },
+  {
+    "method": "POST",
+    "path": "/pages/:key/clear"
+  },
+  {
+    "method": "POST",
+    "path": "/pages/:key/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/rankings"
+  },
+  {
+    "method": "POST",
+    "path": "/rankings/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/rankings/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/recover"
+  },
+  {
+    "method": "POST",
+    "path": "/seo-audit/cleanup-low"
+  },
+  {
+    "method": "POST",
+    "path": "/seo-audit/cleanup-low-batch"
+  },
+  {
+    "method": "POST",
+    "path": "/seo-audit/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/seo-audit/optimize-low-batch"
+  },
+  {
+    "method": "POST",
+    "path": "/seo-audit/optimize-one"
+  },
+  {
+    "method": "POST",
+    "path": "/seo/auto-fill"
+  },
+  {
+    "method": "POST",
+    "path": "/seo/logs/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/seo/logs/:id/retry"
+  },
+  {
+    "method": "POST",
+    "path": "/seo/submit"
+  },
+  {
+    "method": "POST",
+    "path": "/services/:id/ai-content"
+  },
+  {
+    "method": "POST",
+    "path": "/services/:id/auto-seo"
+  },
+  {
+    "method": "POST",
+    "path": "/services/:id/content/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/services/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/services/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/services/new"
+  },
+  {
+    "method": "POST",
+    "path": "/settings"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/ai-seo"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/generate-industry-keywords"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/home-order"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/industry"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/industry-config"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/industry-keywords/ai"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/presets"
+  },
+  {
+    "method": "POST",
+    "path": "/settings/presets/:id/delete"
+  },
+  {
+    "method": "POST",
+    "path": "/setup"
+  },
+  {
+    "method": "POST",
+    "path": "/social/settings"
+  },
+  {
+    "method": "POST",
+    "path": "/subprojects/:id"
+  },
+  {
+    "method": "POST",
+    "path": "/subprojects/:id/edit"
+  },
+  {
+    "method": "POST",
+    "path": "/subprojects/new"
+  },
+  {
+    "method": "POST",
+    "path": "/system-secrets"
+  },
+  {
+    "method": "POST",
+    "path": "/tenants"
+  },
+  {
+    "method": "POST",
+    "path": "/tenants/:id/edit"
+  }
+]

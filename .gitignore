@@ -1,0 +1,17 @@
+node_modules/
+
+# 本地密钥，绝不提交
+.dev.vars
+
+# 由 npm run deploy 自动生成（含 D1/KV 资源 ID），不属于模板内容
+.wrangler.deploy.toml
+.wrangler/
+
+dist/
+build/
+*.log
+npm-debug.log*
+
+# 注意：package-lock.json 必须提交。
+# CI 与 Cloudflare Workers Builds 都使用 `npm ci`，它要求仓库中存在 lockfile；
+# 之前把它 ignore 掉，导致自动化部署在安装依赖这一步就直接失败。

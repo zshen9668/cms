@@ -1,0 +1,47 @@
+{
+  "name": "white-label-cms",
+  "version": "1.1.1",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.16.0",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "predeploy": "node scripts/predeploy.mjs",
+    "deploy": "node scripts/deploy-all.mjs",
+    "setup:cloudflare": "node scripts/setup-cloudflare.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "db:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck",
+    "db:create-admin": "node scripts/create-admin.mjs",
+    "smoke:deploy": "node scripts/smoke-deploy.mjs",
+    "postdeploy:check": "node scripts/postdeploy-check.mjs",
+    "test": "node --experimental-strip-types --experimental-loader ./tests/ts-resolver.mjs --test",
+    "verify": "node scripts/verify-repository.mjs",
+    "check:schema": "node scripts/check-schema.mjs",
+    "check:routes": "node scripts/check-admin-routes.mjs",
+    "check:public": "node scripts/check-public-routes.mjs",
+    "check:seo-geo": "node scripts/check-seo-geo.mjs",
+    "check:deployment": "node scripts/check-deployment.mjs",
+    "check:migrations": "node scripts/check-migrations.mjs",
+    "check:whitelabel": "node scripts/check-white-label.mjs",
+    "check:contact-fields": "node scripts/check-contact-fields.mjs",
+    "check:plugins": "node scripts/check-plugin-crons.mjs",
+    "check:ai-qa": "node scripts/check-ai-qa.mjs",
+    "check:admin-templates": "node scripts/check-admin-templates.mjs",
+    "validate:complete": "npm run doctor && npm run verify && npm run check:schema && npm run check:routes && npm run check:public && npm run check:seo-geo && npm run check:deployment && npm run check:migrations && npm run check:whitelabel && npm run check:contact-fields && npm run check:plugins && npm run check:ai-qa && npm run check:admin-templates && npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "hono": "4.13.11"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20260922.1",
+    "@types/node": "^20.0.0",
+    "typescript": "5.9.3",
+    "wrangler": "4.136.3"
+  },
+  "engines": {
+    "node": ">=26.0.0"
+  }
+}

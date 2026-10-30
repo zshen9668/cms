@@ -1,0 +1,13 @@
+{
+  "name": "网站内容平台",
+  "short_name": "内容平台",
+  "description": "可配置站点主题、服务项目、地区信息与行业资讯的内容平台",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6fe0",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
